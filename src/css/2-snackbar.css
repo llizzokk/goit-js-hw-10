@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  padding: 24px 0;
+  padding: 24px;
 }
 
 ul {
@@ -20,4 +20,73 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.label {
+  line-height: 150%;
+  color: #2e2f42;
+}
+
+.label-delay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-delay {
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  transition: border 250ms ease-in-out;
+}
+
+.input-delay:hover {
+  border: 1px solid #000;
+}
+
+.input-delay:focus {
+  border: 1px solid #4e75ff;
+}
+
+.radio-set {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  margin-bottom: 24px;
+  transition: border 250ms ease-in-out;
+}
+
+.radio-set:hover {
+  border: 1px solid #000;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  border: none;
+  transition: background-color 250ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: #6c8cff;
 }

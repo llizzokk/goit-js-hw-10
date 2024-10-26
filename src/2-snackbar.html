@@ -14,6 +14,26 @@
 </head>
 
 <body>
+  <form class="form">
+    <label class="label label-delay">
+      Delay (ms)
+      <input type="number" name="delay" required class="input-delay" />
+    </label>
+
+    <fieldset class="radio-set">
+      <legend class="set-legend">State</legend>
+      <label class="label label-radio">
+        <input type="radio" name="state" value="fulfilled" required class="input-radio" />
+        Fulfilled
+      </label>
+      <label class="label label-radio">
+        <input type="radio" name="state" value="rejected" required class="input-radio" />
+        Rejected
+      </label>
+    </fieldset>
+
+    <button type="submit" class="btn">Create notification</button>
+  </form>
 
 
   <script type="module" src="./js/2-snackbar.js"></script>
