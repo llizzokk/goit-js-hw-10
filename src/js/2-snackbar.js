@@ -14,7 +14,7 @@ form.addEventListener('submit', handlePromiseCreate);
 function handlePromiseCreate(event) {
   event.preventDefault();
 
-  const delay = event.target.elements.delay.value * 1000;
+  const delay = event.target.elements.delay.value;
   const radioState = event.target.elements.state.value;
 
   const promise = new Promise((resolve, reject) => {
