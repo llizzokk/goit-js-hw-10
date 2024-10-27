@@ -8,8 +8,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import icon from '../img/error.svg';
 
-const input = document.querySelector('.date-input');
-const button = document.querySelector('.btn');
+const input = document.querySelector('#datetime-picker');
+const button = document.querySelector('[data-start]');
 let userSelectedDate;
 let timerInterval;
 
@@ -29,7 +29,7 @@ const options = {
         position: 'topRight',
         title: 'Error',
         titleColor: '#fff',
-        message: 'Illegal operation',
+        message: 'Please choose a date in the future',
         messageColor: '#fff',
         iconColor: '#fff',
         iconUrl: icon,
